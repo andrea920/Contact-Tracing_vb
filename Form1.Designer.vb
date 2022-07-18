@@ -41,16 +41,16 @@ Partial Class Form1
         Me.rad1dose = New System.Windows.Forms.RadioButton()
         Me.btnSubmit = New System.Windows.Forms.Button()
         Me.cbxFever = New System.Windows.Forms.CheckBox()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.cbxSorethroat = New System.Windows.Forms.CheckBox()
-        Me.cbxColds = New System.Windows.Forms.CheckBox()
-        Me.cbxBreathComp = New System.Windows.Forms.CheckBox()
+        Me.gbxQuestion = New System.Windows.Forms.GroupBox()
         Me.cbxCoughs = New System.Windows.Forms.CheckBox()
+        Me.cbxBreathComp = New System.Windows.Forms.CheckBox()
+        Me.cbxColds = New System.Windows.Forms.CheckBox()
+        Me.cbxSorethroat = New System.Windows.Forms.CheckBox()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.cbxIdont = New System.Windows.Forms.CheckBox()
         Me.gbxGender.SuspendLayout()
         Me.gbxVacc.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
+        Me.gbxQuestion.SuspendLayout()
         Me.SuspendLayout()
         '
         'tbxName
@@ -257,43 +257,32 @@ Partial Class Form1
         Me.cbxFever.Text = "Fever"
         Me.cbxFever.UseVisualStyleBackColor = True
         '
-        'GroupBox1
+        'gbxQuestion
         '
-        Me.GroupBox1.BackColor = System.Drawing.Color.Violet
-        Me.GroupBox1.Controls.Add(Me.cbxCoughs)
-        Me.GroupBox1.Controls.Add(Me.cbxBreathComp)
-        Me.GroupBox1.Controls.Add(Me.cbxColds)
-        Me.GroupBox1.Controls.Add(Me.cbxSorethroat)
-        Me.GroupBox1.Controls.Add(Me.cbxFever)
-        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.GroupBox1.Location = New System.Drawing.Point(27, 467)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(294, 120)
-        Me.GroupBox1.TabIndex = 6
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Do you have any of these?"
+        Me.gbxQuestion.BackColor = System.Drawing.Color.Violet
+        Me.gbxQuestion.Controls.Add(Me.cbxCoughs)
+        Me.gbxQuestion.Controls.Add(Me.cbxBreathComp)
+        Me.gbxQuestion.Controls.Add(Me.cbxColds)
+        Me.gbxQuestion.Controls.Add(Me.cbxSorethroat)
+        Me.gbxQuestion.Controls.Add(Me.cbxFever)
+        Me.gbxQuestion.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.gbxQuestion.Location = New System.Drawing.Point(27, 467)
+        Me.gbxQuestion.Name = "gbxQuestion"
+        Me.gbxQuestion.Size = New System.Drawing.Size(294, 120)
+        Me.gbxQuestion.TabIndex = 6
+        Me.gbxQuestion.TabStop = False
+        Me.gbxQuestion.Text = "Do you have any of these?"
         '
-        'cbxSorethroat
+        'cbxCoughs
         '
-        Me.cbxSorethroat.AutoSize = True
-        Me.cbxSorethroat.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cbxSorethroat.Location = New System.Drawing.Point(168, 26)
-        Me.cbxSorethroat.Name = "cbxSorethroat"
-        Me.cbxSorethroat.Size = New System.Drawing.Size(108, 24)
-        Me.cbxSorethroat.TabIndex = 5
-        Me.cbxSorethroat.Text = "Sore Throat"
-        Me.cbxSorethroat.UseVisualStyleBackColor = True
-        '
-        'cbxColds
-        '
-        Me.cbxColds.AutoSize = True
-        Me.cbxColds.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cbxColds.Location = New System.Drawing.Point(168, 56)
-        Me.cbxColds.Name = "cbxColds"
-        Me.cbxColds.Size = New System.Drawing.Size(68, 24)
-        Me.cbxColds.TabIndex = 5
-        Me.cbxColds.Text = "Colds"
-        Me.cbxColds.UseVisualStyleBackColor = True
+        Me.cbxCoughs.AutoSize = True
+        Me.cbxCoughs.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbxCoughs.Location = New System.Drawing.Point(16, 56)
+        Me.cbxCoughs.Name = "cbxCoughs"
+        Me.cbxCoughs.Size = New System.Drawing.Size(80, 24)
+        Me.cbxCoughs.TabIndex = 5
+        Me.cbxCoughs.Text = "Coughs"
+        Me.cbxCoughs.UseVisualStyleBackColor = True
         '
         'cbxBreathComp
         '
@@ -306,16 +295,27 @@ Partial Class Form1
         Me.cbxBreathComp.Text = "Breathing Complications"
         Me.cbxBreathComp.UseVisualStyleBackColor = True
         '
-        'cbxCoughs
+        'cbxColds
         '
-        Me.cbxCoughs.AutoSize = True
-        Me.cbxCoughs.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cbxCoughs.Location = New System.Drawing.Point(16, 56)
-        Me.cbxCoughs.Name = "cbxCoughs"
-        Me.cbxCoughs.Size = New System.Drawing.Size(80, 24)
-        Me.cbxCoughs.TabIndex = 5
-        Me.cbxCoughs.Text = "Coughs"
-        Me.cbxCoughs.UseVisualStyleBackColor = True
+        Me.cbxColds.AutoSize = True
+        Me.cbxColds.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbxColds.Location = New System.Drawing.Point(168, 56)
+        Me.cbxColds.Name = "cbxColds"
+        Me.cbxColds.Size = New System.Drawing.Size(68, 24)
+        Me.cbxColds.TabIndex = 5
+        Me.cbxColds.Text = "Colds"
+        Me.cbxColds.UseVisualStyleBackColor = True
+        '
+        'cbxSorethroat
+        '
+        Me.cbxSorethroat.AutoSize = True
+        Me.cbxSorethroat.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbxSorethroat.Location = New System.Drawing.Point(168, 26)
+        Me.cbxSorethroat.Name = "cbxSorethroat"
+        Me.cbxSorethroat.Size = New System.Drawing.Size(108, 24)
+        Me.cbxSorethroat.TabIndex = 5
+        Me.cbxSorethroat.Text = "Sore Throat"
+        Me.cbxSorethroat.UseVisualStyleBackColor = True
         '
         'lblTitle
         '
@@ -346,7 +346,7 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(347, 720)
         Me.Controls.Add(Me.cbxIdont)
         Me.Controls.Add(Me.lblTitle)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.gbxQuestion)
         Me.Controls.Add(Me.btnSubmit)
         Me.Controls.Add(Me.gbxVacc)
         Me.Controls.Add(Me.gbxGender)
@@ -364,8 +364,8 @@ Partial Class Form1
         Me.gbxGender.PerformLayout()
         Me.gbxVacc.ResumeLayout(False)
         Me.gbxVacc.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.gbxQuestion.ResumeLayout(False)
+        Me.gbxQuestion.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -390,7 +390,7 @@ Partial Class Form1
     Friend WithEvents rad1dose As RadioButton
     Friend WithEvents btnSubmit As Button
     Friend WithEvents cbxFever As CheckBox
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents gbxQuestion As GroupBox
     Friend WithEvents cbxCoughs As CheckBox
     Friend WithEvents cbxBreathComp As CheckBox
     Friend WithEvents cbxColds As CheckBox
