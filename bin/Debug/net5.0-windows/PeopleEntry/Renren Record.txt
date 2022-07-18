@@ -1,0 +1,11 @@
+
+Name: Renren
+Address: Kapitbahay na maingay
+Contact Number: 0922546851
+Temperature: 17
+
+Gender: Male
+
+Vaccination: 2nd Dose
+
+Do you have any of these? Fever

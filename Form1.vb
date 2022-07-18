@@ -1,31 +1,59 @@
 ﻿Imports System.IO
 Public Class Form1
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
-        Using Entry As StreamWriter = New StreamWriter(Application.StartupPath & "\PeopleEntry\" & "Data.txt")
+        Using Entry As StreamWriter = New StreamWriter(Application.StartupPath & "\PeopleEntry\" + tbxName.Text & " " + "Record.txt")
             MessageBox.Show("Data Recorded!")
 
-            Entry.WriteLine(vbCrLf & lblName.Text & " " + tbxName.Text)
+            Entry.WriteLine(lblName.Text & " " + tbxName.Text)
             Entry.WriteLine(lblAddress.Text & " " + tbxAddress.Text)
             Entry.WriteLine(lblCnum.Text & " " + tbxCnum.Text)
             Entry.WriteLine(lblTemp.Text & " " + tbxTemp.Text)
 
 
             If radMale.Checked = True Then
-                Entry.WriteLine(vbCrLf & gbxGender.Text + radMale.Text)
+                Entry.WriteLine(vbCrLf & gbxGender.Text + " " + radMale.Text & vbCrLf)
             Else
-                Entry.WriteLine(vbCrLf & gbxGender.Text + " " + radFemale.Text)
+                Entry.WriteLine(vbCrLf & gbxGender.Text + " " + radFemale.Text & vbCrLf)
             End If
+
+            If rad1dose.Checked = True Then
+                Entry.WriteLine(gbxVacc.Text + " " + rad1dose.Text & vbCrLf)
+            ElseIf rad2dose.Checked = True Then
+                Entry.WriteLine(vbCrLf & gbxVacc.Text + " " + rad2dose.Text & vbCrLf)
+            ElseIf radBooster.Checked = True Then
+                Entry.WriteLine(vbCrLf & gbxVacc.Text + " " + radBooster.Text & vbCrLf)
+            ElseIf rad2booster.Checked = True Then
+                Entry.WriteLine(vbCrLf & gbxVacc.Text + " " + rad2booster.Text & vbCrLf)
+            Else
+                Entry.WriteLine(vbCrLf & gbxVacc.Text + " " + radNotyet.Text & vbCrLf)
+            End If
+
+            Entry.WriteLine(gbxQuestion.Text)
+
+            If cbxFever.Checked = True Then
+                Entry.WriteLine(cbxFever.Text)
+            End If
+            If cbxCoughs.Checked = True Then
+                Entry.WriteLine(cbxCoughs.Text)
+            End If
+            If cbxBreathComp.Checked = True Then
+                Entry.WriteLine(cbxBreathComp.Text)
+            End If
+            If cbxSorethroat.Checked = True Then
+                Entry.WriteLine(cbxSorethroat.Text)
+            End If
+            If cbxColds.Checked = True Then
+                Entry.WriteLine(cbxColds.Text)
+            ElseIf cbxIdont.Checked Then
+                Entry.WriteLine(cbxIdont.Text)
+            End If
+
 
             Entry.Close()
 
-            tbxName.Text = ""
-            tbxAddress.Text = ""
-            tbxCnum.Text = ""
-            tbxTemp.Text = ""
 
-            radMale.Checked = False
-            radFemale.Checked = False
         End Using
 
     End Sub
+
 End Class

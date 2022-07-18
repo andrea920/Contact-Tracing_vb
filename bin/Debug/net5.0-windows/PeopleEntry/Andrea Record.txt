@@ -1,0 +1,17 @@
+
+Name: Andrea
+Address: oogong
+Contact Number: 1231231412
+Temperature: 23
+
+Gender: Female
+
+
+Vaccination: 2nd Dose
+
+Do you have any of these?
+Fever
+Coughs
+Breathing Complications
+Sore Throat
+Colds

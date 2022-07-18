@@ -1,0 +1,10 @@
+
+Name: 
+Address: 
+Contact Number: 
+Temperature: 
+
+Vaccination: Booster
+
+Do you have any of these?
+I don't have any of these

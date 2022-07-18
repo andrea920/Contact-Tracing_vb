@@ -76,7 +76,7 @@ Partial Class Form1
         Me.tbxAddress.Location = New System.Drawing.Point(139, 86)
         Me.tbxAddress.Name = "tbxAddress"
         Me.tbxAddress.Size = New System.Drawing.Size(183, 27)
-        Me.tbxAddress.TabIndex = 0
+        Me.tbxAddress.TabIndex = 1
         '
         'lblAddress
         '
@@ -93,7 +93,7 @@ Partial Class Form1
         Me.tbxCnum.Location = New System.Drawing.Point(139, 136)
         Me.tbxCnum.Name = "tbxCnum"
         Me.tbxCnum.Size = New System.Drawing.Size(183, 27)
-        Me.tbxCnum.TabIndex = 0
+        Me.tbxCnum.TabIndex = 2
         '
         'lblCnum
         '
@@ -110,7 +110,7 @@ Partial Class Form1
         Me.tbxTemp.Location = New System.Drawing.Point(139, 184)
         Me.tbxTemp.Name = "tbxTemp"
         Me.tbxTemp.Size = New System.Drawing.Size(183, 27)
-        Me.tbxTemp.TabIndex = 0
+        Me.tbxTemp.TabIndex = 3
         '
         'lblTemp
         '
@@ -131,7 +131,7 @@ Partial Class Form1
         Me.gbxGender.Location = New System.Drawing.Point(27, 240)
         Me.gbxGender.Name = "gbxGender"
         Me.gbxGender.Size = New System.Drawing.Size(294, 72)
-        Me.gbxGender.TabIndex = 2
+        Me.gbxGender.TabIndex = 20
         Me.gbxGender.TabStop = False
         Me.gbxGender.Text = "Gender:"
         '
@@ -142,7 +142,7 @@ Partial Class Form1
         Me.radFemale.Location = New System.Drawing.Point(192, 26)
         Me.radFemale.Name = "radFemale"
         Me.radFemale.Size = New System.Drawing.Size(78, 24)
-        Me.radFemale.TabIndex = 0
+        Me.radFemale.TabIndex = 5
         Me.radFemale.TabStop = True
         Me.radFemale.Text = "Female"
         Me.radFemale.UseVisualStyleBackColor = True
@@ -154,7 +154,7 @@ Partial Class Form1
         Me.radMale.Location = New System.Drawing.Point(87, 26)
         Me.radMale.Name = "radMale"
         Me.radMale.Size = New System.Drawing.Size(63, 24)
-        Me.radMale.TabIndex = 0
+        Me.radMale.TabIndex = 4
         Me.radMale.TabStop = True
         Me.radMale.Text = "Male"
         Me.radMale.UseVisualStyleBackColor = True
@@ -171,7 +171,7 @@ Partial Class Form1
         Me.gbxVacc.Location = New System.Drawing.Point(31, 335)
         Me.gbxVacc.Name = "gbxVacc"
         Me.gbxVacc.Size = New System.Drawing.Size(289, 118)
-        Me.gbxVacc.TabIndex = 3
+        Me.gbxVacc.TabIndex = 21
         Me.gbxVacc.TabStop = False
         Me.gbxVacc.Text = "Vaccination:"
         '
@@ -182,7 +182,7 @@ Partial Class Form1
         Me.rad2booster.Location = New System.Drawing.Point(145, 53)
         Me.rad2booster.Name = "rad2booster"
         Me.rad2booster.Size = New System.Drawing.Size(110, 24)
-        Me.rad2booster.TabIndex = 0
+        Me.rad2booster.TabIndex = 9
         Me.rad2booster.TabStop = True
         Me.rad2booster.Text = "2nd Booster"
         Me.rad2booster.UseVisualStyleBackColor = True
@@ -194,7 +194,7 @@ Partial Class Form1
         Me.radNotyet.Location = New System.Drawing.Point(67, 83)
         Me.radNotyet.Name = "radNotyet"
         Me.radNotyet.Size = New System.Drawing.Size(79, 24)
-        Me.radNotyet.TabIndex = 0
+        Me.radNotyet.TabIndex = 10
         Me.radNotyet.TabStop = True
         Me.radNotyet.Text = "Not yet"
         Me.radNotyet.UseVisualStyleBackColor = True
@@ -206,7 +206,7 @@ Partial Class Form1
         Me.rad2dose.Location = New System.Drawing.Point(3, 53)
         Me.rad2dose.Name = "rad2dose"
         Me.rad2dose.Size = New System.Drawing.Size(93, 24)
-        Me.rad2dose.TabIndex = 0
+        Me.rad2dose.TabIndex = 8
         Me.rad2dose.TabStop = True
         Me.rad2dose.Text = "2nd Dose"
         Me.rad2dose.UseVisualStyleBackColor = True
@@ -218,7 +218,7 @@ Partial Class Form1
         Me.radBooster.Location = New System.Drawing.Point(145, 23)
         Me.radBooster.Name = "radBooster"
         Me.radBooster.Size = New System.Drawing.Size(81, 24)
-        Me.radBooster.TabIndex = 0
+        Me.radBooster.TabIndex = 7
         Me.radBooster.TabStop = True
         Me.radBooster.Text = "Booster"
         Me.radBooster.UseVisualStyleBackColor = True
@@ -230,7 +230,7 @@ Partial Class Form1
         Me.rad1dose.Location = New System.Drawing.Point(3, 23)
         Me.rad1dose.Name = "rad1dose"
         Me.rad1dose.Size = New System.Drawing.Size(87, 24)
-        Me.rad1dose.TabIndex = 0
+        Me.rad1dose.TabIndex = 6
         Me.rad1dose.TabStop = True
         Me.rad1dose.Text = "1st Dose"
         Me.rad1dose.UseVisualStyleBackColor = True
@@ -238,10 +238,11 @@ Partial Class Form1
         'btnSubmit
         '
         Me.btnSubmit.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnSubmit.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnSubmit.Location = New System.Drawing.Point(124, 679)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(94, 29)
-        Me.btnSubmit.TabIndex = 4
+        Me.btnSubmit.TabIndex = 24
         Me.btnSubmit.Text = "SUBMIT"
         Me.btnSubmit.UseVisualStyleBackColor = False
         '
@@ -253,7 +254,7 @@ Partial Class Form1
         Me.cbxFever.Location = New System.Drawing.Point(16, 26)
         Me.cbxFever.Name = "cbxFever"
         Me.cbxFever.Size = New System.Drawing.Size(66, 24)
-        Me.cbxFever.TabIndex = 5
+        Me.cbxFever.TabIndex = 11
         Me.cbxFever.Text = "Fever"
         Me.cbxFever.UseVisualStyleBackColor = True
         '
@@ -269,7 +270,7 @@ Partial Class Form1
         Me.gbxQuestion.Location = New System.Drawing.Point(27, 467)
         Me.gbxQuestion.Name = "gbxQuestion"
         Me.gbxQuestion.Size = New System.Drawing.Size(294, 120)
-        Me.gbxQuestion.TabIndex = 6
+        Me.gbxQuestion.TabIndex = 22
         Me.gbxQuestion.TabStop = False
         Me.gbxQuestion.Text = "Do you have any of these?"
         '
@@ -280,7 +281,7 @@ Partial Class Form1
         Me.cbxCoughs.Location = New System.Drawing.Point(16, 56)
         Me.cbxCoughs.Name = "cbxCoughs"
         Me.cbxCoughs.Size = New System.Drawing.Size(80, 24)
-        Me.cbxCoughs.TabIndex = 5
+        Me.cbxCoughs.TabIndex = 12
         Me.cbxCoughs.Text = "Coughs"
         Me.cbxCoughs.UseVisualStyleBackColor = True
         '
@@ -291,7 +292,7 @@ Partial Class Form1
         Me.cbxBreathComp.Location = New System.Drawing.Point(16, 86)
         Me.cbxBreathComp.Name = "cbxBreathComp"
         Me.cbxBreathComp.Size = New System.Drawing.Size(194, 24)
-        Me.cbxBreathComp.TabIndex = 5
+        Me.cbxBreathComp.TabIndex = 13
         Me.cbxBreathComp.Text = "Breathing Complications"
         Me.cbxBreathComp.UseVisualStyleBackColor = True
         '
@@ -302,7 +303,7 @@ Partial Class Form1
         Me.cbxColds.Location = New System.Drawing.Point(168, 56)
         Me.cbxColds.Name = "cbxColds"
         Me.cbxColds.Size = New System.Drawing.Size(68, 24)
-        Me.cbxColds.TabIndex = 5
+        Me.cbxColds.TabIndex = 15
         Me.cbxColds.Text = "Colds"
         Me.cbxColds.UseVisualStyleBackColor = True
         '
@@ -313,7 +314,7 @@ Partial Class Form1
         Me.cbxSorethroat.Location = New System.Drawing.Point(168, 26)
         Me.cbxSorethroat.Name = "cbxSorethroat"
         Me.cbxSorethroat.Size = New System.Drawing.Size(108, 24)
-        Me.cbxSorethroat.TabIndex = 5
+        Me.cbxSorethroat.TabIndex = 14
         Me.cbxSorethroat.Text = "Sore Throat"
         Me.cbxSorethroat.UseVisualStyleBackColor = True
         '
@@ -334,7 +335,7 @@ Partial Class Form1
         Me.cbxIdont.Location = New System.Drawing.Point(43, 593)
         Me.cbxIdont.Name = "cbxIdont"
         Me.cbxIdont.Size = New System.Drawing.Size(199, 24)
-        Me.cbxIdont.TabIndex = 8
+        Me.cbxIdont.TabIndex = 23
         Me.cbxIdont.Text = "I don't have any of these"
         Me.cbxIdont.UseVisualStyleBackColor = True
         '

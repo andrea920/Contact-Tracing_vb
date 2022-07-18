@@ -1,7 +1,0 @@
-
-Name: Andrea
-Address: asdasd
-Contact Number: 1231
-Temperature: asdasd
-
-Gender: Female

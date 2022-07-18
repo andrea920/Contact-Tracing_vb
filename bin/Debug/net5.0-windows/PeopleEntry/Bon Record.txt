@@ -1,0 +1,9 @@
+
+Name: Bon
+Address: Cebu
+Contact Number: 0988772616
+Temperature: 45
+
+Gender:Male
+
+Vaccination:1st Dose
