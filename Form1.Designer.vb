@@ -63,9 +63,11 @@ Partial Class Form1
         'lblName
         '
         Me.lblName.AutoSize = True
-        Me.lblName.Location = New System.Drawing.Point(12, 45)
+        Me.lblName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblName.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lblName.Location = New System.Drawing.Point(3, 45)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(52, 20)
+        Me.lblName.Size = New System.Drawing.Size(55, 20)
         Me.lblName.TabIndex = 1
         Me.lblName.Text = "Name:"
         '
@@ -79,9 +81,10 @@ Partial Class Form1
         'lblAddress
         '
         Me.lblAddress.AutoSize = True
-        Me.lblAddress.Location = New System.Drawing.Point(12, 89)
+        Me.lblAddress.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblAddress.Location = New System.Drawing.Point(3, 89)
         Me.lblAddress.Name = "lblAddress"
-        Me.lblAddress.Size = New System.Drawing.Size(65, 20)
+        Me.lblAddress.Size = New System.Drawing.Size(70, 20)
         Me.lblAddress.TabIndex = 1
         Me.lblAddress.Text = "Address:"
         '
@@ -95,9 +98,10 @@ Partial Class Form1
         'lblCnum
         '
         Me.lblCnum.AutoSize = True
-        Me.lblCnum.Location = New System.Drawing.Point(12, 139)
+        Me.lblCnum.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblCnum.Location = New System.Drawing.Point(3, 139)
         Me.lblCnum.Name = "lblCnum"
-        Me.lblCnum.Size = New System.Drawing.Size(121, 20)
+        Me.lblCnum.Size = New System.Drawing.Size(130, 20)
         Me.lblCnum.TabIndex = 1
         Me.lblCnum.Text = "Contact Number:"
         '
@@ -111,16 +115,19 @@ Partial Class Form1
         'lblTemp
         '
         Me.lblTemp.AutoSize = True
-        Me.lblTemp.Location = New System.Drawing.Point(12, 187)
+        Me.lblTemp.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblTemp.Location = New System.Drawing.Point(3, 184)
         Me.lblTemp.Name = "lblTemp"
-        Me.lblTemp.Size = New System.Drawing.Size(96, 20)
+        Me.lblTemp.Size = New System.Drawing.Size(103, 20)
         Me.lblTemp.TabIndex = 1
         Me.lblTemp.Text = "Temperature:"
         '
         'gbxGender
         '
+        Me.gbxGender.BackColor = System.Drawing.Color.Violet
         Me.gbxGender.Controls.Add(Me.radFemale)
         Me.gbxGender.Controls.Add(Me.radMale)
+        Me.gbxGender.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.gbxGender.Location = New System.Drawing.Point(27, 240)
         Me.gbxGender.Name = "gbxGender"
         Me.gbxGender.Size = New System.Drawing.Size(294, 72)
@@ -131,6 +138,7 @@ Partial Class Form1
         'radFemale
         '
         Me.radFemale.AutoSize = True
+        Me.radFemale.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.radFemale.Location = New System.Drawing.Point(192, 26)
         Me.radFemale.Name = "radFemale"
         Me.radFemale.Size = New System.Drawing.Size(78, 24)
@@ -142,6 +150,7 @@ Partial Class Form1
         'radMale
         '
         Me.radMale.AutoSize = True
+        Me.radMale.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.radMale.Location = New System.Drawing.Point(87, 26)
         Me.radMale.Name = "radMale"
         Me.radMale.Size = New System.Drawing.Size(63, 24)
@@ -152,11 +161,13 @@ Partial Class Form1
         '
         'gbxVacc
         '
+        Me.gbxVacc.BackColor = System.Drawing.Color.Violet
         Me.gbxVacc.Controls.Add(Me.rad2booster)
         Me.gbxVacc.Controls.Add(Me.radNotyet)
         Me.gbxVacc.Controls.Add(Me.rad2dose)
         Me.gbxVacc.Controls.Add(Me.radBooster)
         Me.gbxVacc.Controls.Add(Me.rad1dose)
+        Me.gbxVacc.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.gbxVacc.Location = New System.Drawing.Point(31, 335)
         Me.gbxVacc.Name = "gbxVacc"
         Me.gbxVacc.Size = New System.Drawing.Size(289, 118)
@@ -167,6 +178,7 @@ Partial Class Form1
         'rad2booster
         '
         Me.rad2booster.AutoSize = True
+        Me.rad2booster.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.rad2booster.Location = New System.Drawing.Point(145, 53)
         Me.rad2booster.Name = "rad2booster"
         Me.rad2booster.Size = New System.Drawing.Size(110, 24)
@@ -178,6 +190,7 @@ Partial Class Form1
         'radNotyet
         '
         Me.radNotyet.AutoSize = True
+        Me.radNotyet.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.radNotyet.Location = New System.Drawing.Point(67, 83)
         Me.radNotyet.Name = "radNotyet"
         Me.radNotyet.Size = New System.Drawing.Size(79, 24)
@@ -189,6 +202,7 @@ Partial Class Form1
         'rad2dose
         '
         Me.rad2dose.AutoSize = True
+        Me.rad2dose.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.rad2dose.Location = New System.Drawing.Point(3, 53)
         Me.rad2dose.Name = "rad2dose"
         Me.rad2dose.Size = New System.Drawing.Size(93, 24)
@@ -200,6 +214,7 @@ Partial Class Form1
         'radBooster
         '
         Me.radBooster.AutoSize = True
+        Me.radBooster.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.radBooster.Location = New System.Drawing.Point(145, 23)
         Me.radBooster.Name = "radBooster"
         Me.radBooster.Size = New System.Drawing.Size(81, 24)
@@ -211,6 +226,7 @@ Partial Class Form1
         'rad1dose
         '
         Me.rad1dose.AutoSize = True
+        Me.rad1dose.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.rad1dose.Location = New System.Drawing.Point(3, 23)
         Me.rad1dose.Name = "rad1dose"
         Me.rad1dose.Size = New System.Drawing.Size(87, 24)
@@ -221,16 +237,19 @@ Partial Class Form1
         '
         'btnSubmit
         '
-        Me.btnSubmit.Location = New System.Drawing.Point(114, 679)
+        Me.btnSubmit.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnSubmit.Location = New System.Drawing.Point(124, 679)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(94, 29)
         Me.btnSubmit.TabIndex = 4
         Me.btnSubmit.Text = "SUBMIT"
-        Me.btnSubmit.UseVisualStyleBackColor = True
+        Me.btnSubmit.UseVisualStyleBackColor = False
         '
         'cbxFever
         '
         Me.cbxFever.AutoSize = True
+        Me.cbxFever.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbxFever.ForeColor = System.Drawing.SystemColors.ControlText
         Me.cbxFever.Location = New System.Drawing.Point(16, 26)
         Me.cbxFever.Name = "cbxFever"
         Me.cbxFever.Size = New System.Drawing.Size(66, 24)
@@ -240,11 +259,13 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Violet
         Me.GroupBox1.Controls.Add(Me.cbxCoughs)
         Me.GroupBox1.Controls.Add(Me.cbxBreathComp)
         Me.GroupBox1.Controls.Add(Me.cbxColds)
         Me.GroupBox1.Controls.Add(Me.cbxSorethroat)
         Me.GroupBox1.Controls.Add(Me.cbxFever)
+        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.GroupBox1.Location = New System.Drawing.Point(27, 467)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(294, 120)
@@ -255,6 +276,7 @@ Partial Class Form1
         'cbxSorethroat
         '
         Me.cbxSorethroat.AutoSize = True
+        Me.cbxSorethroat.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.cbxSorethroat.Location = New System.Drawing.Point(168, 26)
         Me.cbxSorethroat.Name = "cbxSorethroat"
         Me.cbxSorethroat.Size = New System.Drawing.Size(108, 24)
@@ -265,6 +287,7 @@ Partial Class Form1
         'cbxColds
         '
         Me.cbxColds.AutoSize = True
+        Me.cbxColds.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.cbxColds.Location = New System.Drawing.Point(168, 56)
         Me.cbxColds.Name = "cbxColds"
         Me.cbxColds.Size = New System.Drawing.Size(68, 24)
@@ -275,6 +298,7 @@ Partial Class Form1
         'cbxBreathComp
         '
         Me.cbxBreathComp.AutoSize = True
+        Me.cbxBreathComp.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.cbxBreathComp.Location = New System.Drawing.Point(16, 86)
         Me.cbxBreathComp.Name = "cbxBreathComp"
         Me.cbxBreathComp.Size = New System.Drawing.Size(194, 24)
@@ -285,6 +309,7 @@ Partial Class Form1
         'cbxCoughs
         '
         Me.cbxCoughs.AutoSize = True
+        Me.cbxCoughs.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.cbxCoughs.Location = New System.Drawing.Point(16, 56)
         Me.cbxCoughs.Name = "cbxCoughs"
         Me.cbxCoughs.Size = New System.Drawing.Size(80, 24)
@@ -295,18 +320,20 @@ Partial Class Form1
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Location = New System.Drawing.Point(74, 9)
+        Me.lblTitle.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblTitle.Location = New System.Drawing.Point(62, 9)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(183, 20)
+        Me.lblTitle.Size = New System.Drawing.Size(224, 19)
         Me.lblTitle.TabIndex = 7
         Me.lblTitle.Text = "CONTACT TRACING FORM"
         '
         'cbxIdont
         '
         Me.cbxIdont.AutoSize = True
+        Me.cbxIdont.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
         Me.cbxIdont.Location = New System.Drawing.Point(43, 593)
         Me.cbxIdont.Name = "cbxIdont"
-        Me.cbxIdont.Size = New System.Drawing.Size(192, 24)
+        Me.cbxIdont.Size = New System.Drawing.Size(199, 24)
         Me.cbxIdont.TabIndex = 8
         Me.cbxIdont.Text = "I don't have any of these"
         Me.cbxIdont.UseVisualStyleBackColor = True
@@ -315,6 +342,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightCoral
         Me.ClientSize = New System.Drawing.Size(347, 720)
         Me.Controls.Add(Me.cbxIdont)
         Me.Controls.Add(Me.lblTitle)
