@@ -57,8 +57,10 @@ Public Class Form1
     End Sub
 
     Private Sub btnView_Click(sender As Object, e As EventArgs) Handles btnView.Click
-
-
+        Dim ViewData As String
+        ViewData = My.Computer.FileSystem.ReadAllText(tbxFind.Text)
+        Dim ViewFile As String = ViewData
+        tbxDisplay.Text = ViewFile
     End Sub
 
     Private Sub btnFind_Click(sender As Object, e As EventArgs) Handles btnFind.Click
