@@ -48,6 +48,8 @@ Partial Class Form1
         Me.cbxSorethroat = New System.Windows.Forms.CheckBox()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.cbxIdont = New System.Windows.Forms.CheckBox()
+        Me.tbxDisplay = New System.Windows.Forms.TextBox()
+        Me.btnView = New System.Windows.Forms.Button()
         Me.gbxGender.SuspendLayout()
         Me.gbxVacc.SuspendLayout()
         Me.gbxQuestion.SuspendLayout()
@@ -339,12 +341,31 @@ Partial Class Form1
         Me.cbxIdont.Text = "I don't have any of these"
         Me.cbxIdont.UseVisualStyleBackColor = True
         '
+        'tbxDisplay
+        '
+        Me.tbxDisplay.Location = New System.Drawing.Point(410, 47)
+        Me.tbxDisplay.Multiline = True
+        Me.tbxDisplay.Name = "tbxDisplay"
+        Me.tbxDisplay.Size = New System.Drawing.Size(392, 539)
+        Me.tbxDisplay.TabIndex = 25
+        '
+        'btnView
+        '
+        Me.btnView.Location = New System.Drawing.Point(545, 604)
+        Me.btnView.Name = "btnView"
+        Me.btnView.Size = New System.Drawing.Size(129, 38)
+        Me.btnView.TabIndex = 26
+        Me.btnView.Text = "View"
+        Me.btnView.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightCoral
-        Me.ClientSize = New System.Drawing.Size(347, 720)
+        Me.ClientSize = New System.Drawing.Size(856, 720)
+        Me.Controls.Add(Me.btnView)
+        Me.Controls.Add(Me.tbxDisplay)
         Me.Controls.Add(Me.cbxIdont)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.gbxQuestion)
@@ -360,7 +381,7 @@ Partial Class Form1
         Me.Controls.Add(Me.tbxAddress)
         Me.Controls.Add(Me.tbxName)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Contact Tracing"
         Me.gbxGender.ResumeLayout(False)
         Me.gbxGender.PerformLayout()
         Me.gbxVacc.ResumeLayout(False)
@@ -398,4 +419,6 @@ Partial Class Form1
     Friend WithEvents cbxSorethroat As CheckBox
     Friend WithEvents lblTitle As Label
     Friend WithEvents cbxIdont As CheckBox
+    Friend WithEvents tbxDisplay As TextBox
+    Friend WithEvents btnView As Button
 End Class
