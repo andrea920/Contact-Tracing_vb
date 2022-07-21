@@ -62,6 +62,11 @@ Public Class Form1
     End Sub
 
     Private Sub btnFind_Click(sender As Object, e As EventArgs) Handles btnFind.Click
+        Dim GetPath As OpenFileDialog = New OpenFileDialog()
 
+        If GetPath.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Dim DataRecord As String = GetPath.FileName
+            tbxFind.Text = DataRecord
+        End If
     End Sub
 End Class
