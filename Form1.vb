@@ -56,4 +56,12 @@ Public Class Form1
 
     End Sub
 
+    Private Sub btnView_Click(sender As Object, e As EventArgs) Handles btnView.Click
+
+
+    End Sub
+
+    Private Sub btnFind_Click(sender As Object, e As EventArgs) Handles btnFind.Click
+
+    End Sub
 End Class

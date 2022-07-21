@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.tbxName = New System.Windows.Forms.TextBox()
         Me.lblName = New System.Windows.Forms.Label()
@@ -50,6 +50,8 @@ Partial Class Form1
         Me.cbxIdont = New System.Windows.Forms.CheckBox()
         Me.tbxDisplay = New System.Windows.Forms.TextBox()
         Me.btnView = New System.Windows.Forms.Button()
+        Me.tbxFind = New System.Windows.Forms.TextBox()
+        Me.btnFind = New System.Windows.Forms.Button()
         Me.gbxGender.SuspendLayout()
         Me.gbxVacc.SuspendLayout()
         Me.gbxQuestion.SuspendLayout()
@@ -241,9 +243,9 @@ Partial Class Form1
         '
         Me.btnSubmit.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btnSubmit.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnSubmit.Location = New System.Drawing.Point(124, 679)
+        Me.btnSubmit.Location = New System.Drawing.Point(98, 639)
         Me.btnSubmit.Name = "btnSubmit"
-        Me.btnSubmit.Size = New System.Drawing.Size(94, 29)
+        Me.btnSubmit.Size = New System.Drawing.Size(99, 43)
         Me.btnSubmit.TabIndex = 24
         Me.btnSubmit.Text = "SUBMIT"
         Me.btnSubmit.UseVisualStyleBackColor = False
@@ -343,20 +345,41 @@ Partial Class Form1
         '
         'tbxDisplay
         '
-        Me.tbxDisplay.Location = New System.Drawing.Point(410, 47)
+        Me.tbxDisplay.Location = New System.Drawing.Point(410, 139)
         Me.tbxDisplay.Multiline = True
         Me.tbxDisplay.Name = "tbxDisplay"
-        Me.tbxDisplay.Size = New System.Drawing.Size(392, 539)
+        Me.tbxDisplay.Size = New System.Drawing.Size(392, 447)
         Me.tbxDisplay.TabIndex = 25
         '
         'btnView
         '
+        Me.btnView.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnView.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnView.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnView.Location = New System.Drawing.Point(545, 604)
         Me.btnView.Name = "btnView"
         Me.btnView.Size = New System.Drawing.Size(129, 38)
         Me.btnView.TabIndex = 26
-        Me.btnView.Text = "View"
-        Me.btnView.UseVisualStyleBackColor = True
+        Me.btnView.Text = "VIEW"
+        Me.btnView.UseVisualStyleBackColor = False
+        '
+        'tbxFind
+        '
+        Me.tbxFind.Location = New System.Drawing.Point(526, 86)
+        Me.tbxFind.Name = "tbxFind"
+        Me.tbxFind.Size = New System.Drawing.Size(224, 27)
+        Me.tbxFind.TabIndex = 27
+        '
+        'btnFind
+        '
+        Me.btnFind.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnFind.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnFind.Location = New System.Drawing.Point(426, 84)
+        Me.btnFind.Name = "btnFind"
+        Me.btnFind.Size = New System.Drawing.Size(94, 29)
+        Me.btnFind.TabIndex = 28
+        Me.btnFind.Text = "FIND"
+        Me.btnFind.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -364,6 +387,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightCoral
         Me.ClientSize = New System.Drawing.Size(856, 720)
+        Me.Controls.Add(Me.btnFind)
+        Me.Controls.Add(Me.tbxFind)
         Me.Controls.Add(Me.btnView)
         Me.Controls.Add(Me.tbxDisplay)
         Me.Controls.Add(Me.cbxIdont)
@@ -421,4 +446,6 @@ Partial Class Form1
     Friend WithEvents cbxIdont As CheckBox
     Friend WithEvents tbxDisplay As TextBox
     Friend WithEvents btnView As Button
+    Friend WithEvents tbxFind As TextBox
+    Friend WithEvents btnFind As Button
 End Class
